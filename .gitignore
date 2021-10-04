@@ -230,3 +230,10 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# Terraform
+secrets.tfvar
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
