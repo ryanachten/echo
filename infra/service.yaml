@@ -1,0 +1,15 @@
+# TODO: don't think we should be using NodePort in PROD
+apiVersion: v1
+kind: Service
+metadata:
+  name: pear
+spec:
+  type: NodePort
+  selector:
+    app: pear
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 31000
+    
